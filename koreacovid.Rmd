@@ -45,10 +45,14 @@ So I can use the Cat~Cat helper file
 ## Graphical results - use ggplot commands to do this  
 
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+```
 
   
 
-
+With this chart I can see those who died, 60% of the chart were males and females the other 40%
 
 
 
