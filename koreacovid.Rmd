@@ -69,8 +69,13 @@ This table shows the average male have higher death rates then the females. male
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+The p-value for the CHI-squared test is 0.0012, since its less than 0.05 I will reject the null hypothesis and say that there is a difference in death rates based on sex. With that the results are significant between the variables with an estimated odds ratio of 2.3 adn 95% confidence interval ranging from 1.4 to 3.9. 
 
 ## Conclusions
 
