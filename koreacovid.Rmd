@@ -59,6 +59,13 @@ With this chart I can see those who died, 60% of the chart were males and female
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+This table shows the average male have higher death rates then the females. males being 64 and females 36. 
 
 ## Inferential results 
 
